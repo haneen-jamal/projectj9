@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+           grid-template-areas:
+           ' bo1 bo2 bo3 bo3 bo3 bo4'
+           'bo1 bo5 bo3 bo3 bo3 bo6'
+           'bo1 bo7 bo7 bo8 bo9 bo10' ;
+
+        }
+
+      
+
+        .container div {
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .box1 {
+            background-color: antiquewhite;
+            grid-area: bo1;
+        }
+
+        .box2 {
+            background-color: blue;
+            grid-area: bo2;
+        }
+
+        .box3 {
+            background-color: palevioletred;
+            grid-area: bo3;
+        }
+
+
+        .box4 {
+            background-color: red;
+            grid-area: bo4;
+        }
+
+        .box5 {
+            background-color: blueviolet;
+            grid-area: bo5;
+        }
+
+        .box6 {
+            background-color: darkolivegreen;
+            grid-area: bo6;
+        }
+
+
+        .box7 {
+            background-color: yellow;
+            grid-area: bo7;
+
+
+        }
+
+        .box8 {
+            background-color: green;
+            grid-area: bo8;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">Bos-1</div>
+        <div class="box2">box-2</div>
+        <div class="box3">box-3</div>
+        <div class="box4">box-4</div>
+        <div class="box5">box-5</div>
+        <div class="box6">box-6</div>
+        <div class="box7">box-7</div>
+        <div class="box8">box-8</div>
+        <div class="box9">box-9</div>
+        <div class="box10">box-10</div>
+
+    </div>
+</body>
+
+</html>

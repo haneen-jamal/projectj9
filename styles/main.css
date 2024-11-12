@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(51, 51, 51);
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+
+/* Start of Header Syles */
+header {
+    padding: 30px;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 42px;
+    font-weight: bold;
+    margin-right: 200px;
+}
+
+nav {
+    display: inline-block;
+    font-size: 24px;
+    
+    text-align: center;
+    margin-right: 150px
+}
+
+.nav-link {
+    opacity: 0.75;
+    margin: 0 20px;
+    font-weight: 500;
+    transition: all 0.2s
+}
+
+.nav-link:hover {
+    opacity: 1;
+    font-size: 25px;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #04DDB2;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.5s
+}
+
+.download-btn:hover {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* End of Header Syles */

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+        body {
+            background-color: hsl(210, 46%, 95%);
+            font-family: "Barlow semi Condensed",sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        html {
+            font-size: 16px;
+        }
+
+        .container {
+            padding-top: 8rem;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            gap:1rem ;
+            grid-template-areas:
+                'ca1 ca1 ca2 ca3'
+                'ca4 ca5 ca5 ca3';
+        }
+
+        img {
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+        }
+
+
+        .card-part1 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            /* font-size: 0.6rem; */
+        }
+
+        .card1 {
+            grid-area: ca1;
+            color: white;
+            background-color: hsl(263, 55%, 52%);
+            background-image:url(bg-pattern-quotation.svg);
+            background-repeat: no-repeat;
+            background-position: 30rem 0rem;
+            border-radius: 0.5rem;
+            padding: 1rem;
+        }
+
+        .first-p2 {
+            color: hsl(0, 0%, 81%);
+        }
+
+        .pp2 {
+            color: hsl(0, 0%, 81%);
+            /* font-size: 0.9rem; */
+        }
+
+        .pp1 {
+            color: hsl(217, 19%, 35%);
+        }
+
+        .first-p1 {
+            color: hsl(217, 19%, 35%);
+        }
+
+        .card2 {
+            grid-area: ca2;
+            color: white;
+            background-color: hsl(217, 19%, 35%);
+            border-radius: 0.5rem;
+            padding: 1rem;
+        }
+
+        .card3 {
+            grid-area: ca3;
+            color: white;
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 1rem;
+
+        }
+
+        .card4 {
+            grid-area: ca4;
+            color: white;
+            background-color: white;
+            border-radius: 0.5rem;
+            padding: 1rem;
+        }
+
+        .card5 {
+            grid-area: ca5;
+            color: white;
+            background-color: hsl(219, 29%, 14%);
+            border-radius: 0.5rem;
+            padding: 1rem;
+
+        }
+        @media screen  and ( max-width:768px) {
+            html {
+                font-size: 10px;
+            }
+            /* .container {
+                display: grid;
+                grid-template-areas:
+                'ca1 ca1 ca1 ca1'
+                'ca1 ca1 ca1 ca1'
+                'ca2 ca2  ca2 ca2'
+                'ca3 ca3 ca3 ca3'
+                'ca4 ca4 ca4 ca4'
+                'ca5 ca5 ca5 ca5'
+                'ca5 ca5 ca5 ca5'
+                'ca3 ca3 ca3 ca3';
+            }
+            .card1 {
+                grid-area: ca1;
+            }
+            .card2 {
+                grid-area: ca2;
+            } 
+             .card3 {
+                grid-area: ca3;
+             }  
+            
+             .card4 {
+                grid-area: ca4;
+            } 
+             .card2 {
+                grid-area: ca5;
+            } 
+             */
+           
+             .container {
+                display: block;
+                margin: 1rem;
+            }
+           
+            .card1 {
+                margin:1rem ;
+            } 
+            .card2 {
+                margin:1rem ;
+            }
+             .card3 {
+                margin:1rem ;
+            } 
+            .card4 {
+                margin:1rem ;
+            } 
+            .card5 {
+                margin:1rem ;
+            }
+        }
+
+    </style>
+    <!-- Weights: 500, 600
+
+     Moderate violet: hsl(263, 55%, 52%)
+     Very dark grayish blue: hsl(217, 19%, 35%)
+     Very dark blackish blue: hsl(219, 29%, 14%)
+     White: hsl(0, 0%, 100%)
+     Light gray: hsl(0, 0%, 81%)
+     Light grayish blue: hsl(210, 46%, 95%)
+     
+     طبعا ممكن تستعملو اللون بصيغة الhsl او تحولو عادي لrgb او hex -->
+</head>
+
+<body>
+    
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> -->
+    <div class="container">
+        <div class="card1">
+            <div class="card-part1 ">
+                <div> <img src="image-daniel.jpg" alt=""></div>
+                <div>
+                    <p>Daniel Clifford</p>
+                    <p class="first-p2">Verified Graduate</p>
+                </div>
+
+            </div>
+            <div>
+                <p>I received a jop offer mid-course, and the subject i learned <br>were current, if not
+                    more so in the
+                    company I joined. I <br> honestly feel I got every pennys woth .</p>
+                <p class="pp2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime porro quidem neque <br>
+                    delectus dolor dignissimos veniam ratione, labore ipsa odio sit itaque repellat <br>incidunt a quas
+                    dolorum cum in reprehenderit officiis, nostrum ex! Similique non impedit <br> laboriosam nulla ut
+                    labore
+                    inventore cum aliquid cupiditate quae totam alias quos sequi, iste <br>aperiam recusandae omnis
+                    deleniti
+                    expedita quod eligendi.</p>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="card-part1">
+                <div><img src="image-jonathan.jpg" alt=""></div>
+                <div>
+                    <p>Jonathan Walters</p>
+                    <p class="first-p2">Verified Graduate</p>
+                </div>
+
+            </div>
+            <div>
+                <p>The team was very <br> supportive and kept me <br> motivated</p>
+                <p class="pp2">" I started as a total newbie with <br> virtually no coding skills. Inow work <br>as a
+                    mobile
+                    englneer for a big <br> company. The was one of the best <br> investments I've made in myself."</p>
+
+            </div>
+        </div>
+        <div class="card3">
+            <div class="card-part1">
+                <div><img src="image-patrick.jpg" alt=""></div>
+                <div>
+                    <p class="first-p1">Patrick Abrams</p>
+                    <p class="first-p2">Verified Graduate</p>
+                </div>
+            </div>
+            <div>
+                <p class="pp1">Such a life- changing <br>experience.Highly <br> recommended</p>
+                <p class="pp2">'Before joining the bootcamp i've <br> never written a line ofcode .ineeded <br>some strcture
+                    from profession <br> who can help me learn programing <br>step by step.i was encouragged to
+                    <br>enroll by a former student of theirs <br>who   Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit. Impedit  <br>totam modi id voluptatibus optio sit <br> laboriosam adipisci iste omnis. Ipsam  <br>iure pariatur delectus molestiae repellat <br> dignissimos tenetur maiores nam. Eum. <br> Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Voluptates perferendis <br> alias aperiam, eveniet quas ratione eaque <br> voluptate pariatur eius id amet quam in <br> ipsam culpa, voluptatum tenetur provident <br> tempora nemo! Lorem, ipsum dolor sit  <br>amet consectetur adipisicing elit. Vel  <br>esse explicabo autem expedita incidunt nam,
+
+
+
+                </p>
+            </div>
+        </div>
+        <div class="card4">
+            <div class="card-part1">
+                <div><img src="image-daniel.jpg" alt=""></div>
+                <div>
+                    <p class="first-p1">Jeanette Harmon </p>
+                    <p class="first-p2">Verified Graduate</p>
+                </div>
+            </div>
+            <div>
+                <p class="pp1">An overall wonderful <br> and rewarding <br> experience</p>
+                <p class="pp2">"Thank you for the wonderful <br> experience Inow have a job I  really  <br>enjoy and make a
+                    good living
+                    while <br> doing something I love ."</p>
+            </div>
+        </div>
+        <div class="card5">
+            <div class="card-part1">
+                <div><img src="image-daniel.jpg" alt=""></div>
+                <div>
+                    <p>patrick Abrams </p>
+                    <p class="first-p2">Verified Graduate</p>
+                </div>
+            </div>
+            <div>
+                <p>Awesome teaching support form TAs who did the bootcamp <br>themselves. Gettimg guidance from them and
+                    learing from <br>thier experiences was easy.</p>
+                <P class="pp2">'the staff seem qenuinely convemed aboot my progress which ifind realy refreshing. the
+                    <br> program gave me the confidence necessary to be able to go out in the wprld and present <br>
+                    myself as acapable uinior developer. THE STANDARD IS ABOVE THE REST YOU will get the <br> persone
+                    attention you need from an incredible community of smart and amazind people '</P>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card6"></div>
+    <div class="card7"></div>
+    <div class="card8"></div>
+    </div>
+</body>
+
+</html>

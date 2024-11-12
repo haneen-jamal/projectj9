@@ -1,0 +1,27 @@
+:root {
+  --bulma-primary-h: 173deg;
+  --bulma-link-h: 204deg;
+  --bulma-info-h: 276deg;
+  --bulma-success-h: 63deg;
+  --bulma-weight-light: 200;
+  --bulma-body-background-color:weight ;
+  --bulma-scheme-main:weight;
+}
+.service {
+  border:1px solid hsl(0, 0, 71%) ;
+  border-radius: 5px;
+}
+.       {
+  position: relative;
+}
+.titel-sec::after{
+  content: ;
+  width:70px ;
+  height:5px ;
+  background: red;
+  position: absolute;
+  top:120%;
+  left: 50%;
+  border-radius: 5px;
+
+}

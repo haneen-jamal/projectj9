@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+        html {
+            font-size: 16px;
+        }
+    
+        body {
+            background-color: #FAFAFA;
+            height: 1500px;
+            font-family: "Poppins",sans-serif;
+        }
+    
+        .contener {
+            padding: 30px;
+    
+        }
+    
+        .head {
+            text-align: center;
+        }
+    
+        h1 {
+            color: #A3A5AE;
+    
+        }
+    
+        p {
+            color: #A3A5AE;
+            padding: 20px;
+        }
+    
+        .blod {
+            color: #4C4E61;
+        }
+    
+        .card {
+            /* position: relative; */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+    
+        .card div {
+            width: 300px;
+            height: 250px;
+            background-color: white;
+            box-shadow: 0px 0px 18px 3px #A3A5AE;
+        }
+    
+        .card1 {
+            border-top: 4px solid #45D3D3;
+            padding: 15px;
+            margin-top: 125px;
+            align-self: center;
+            position: relative;
+    
+        }
+    
+        .card2 {
+            border-top: 4px solid #EA5353;
+            padding: 15px;
+            margin-bottom: 15px;
+            position: relative;
+    
+        }
+    
+        .card3 {
+            border-top: 4px solid #b37f0f;
+            padding: 15px;
+            position: relative;
+        }
+    
+        .card4 {
+            border-top: 4px solid #549EF2;
+            padding: 15px;
+            margin-top: 125px;
+            align-items: center;
+            position: relative;
+        }
+    
+        img {
+            position:absolute;
+            /* left: 100%;
+            top: 100%; */
+            right: 0;
+            bottom: 0;
+        }
+        @media screen and (max-width:768px) {
+           .card{
+            display: flex;
+            flex-direction: column;
+            gap:20px
+           }
+           .card4 {
+            margin-top:10px;
+           }
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="contener">
+        <div class="head">
+            <h1>Reliable efficient delivey</h1>
+            <h1 class="blod">Powered by Technology </h1>
+            <p> our Artificial Intelligence powered tools use millions of project <br> data points to ensure your
+                project is successful </p>
+        </div>
+        <div class="card">
+            <div class="card1">
+                <h3>Supervisor</h3>
+                <p> Scans our talent network to create the optimal team for your project </p>
+                <img src="./../../homework/icon-supervisor.svg" alt="">
+
+            </div>
+            <div>
+                <div class="card2">
+                    <h3>Team Builder</h3>
+                    <p> Scans our talent network to create the optimal team for your project </p>
+                    <img src="./../../homework/icon-team-builder.svg" alt="">
+                </div>
+                <div class="card3">
+                    <h3>Karma</h3>
+                    <p> Scans our talent network to create the optimal team for your project </p>
+                    <img src="./../../homework/icon-bulb.svg" alt="">
+                </div>
+            </div>
+            <div class="card4">
+                <h3>Calculator</h3>
+                <p> Scans our talent network to create the optimal team for your project </p>
+                <img src="./../../homework/icon-calculator.svg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

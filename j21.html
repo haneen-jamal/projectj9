@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STyle>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 5px 75px;
+            background-color: rgba(193, 191, 191, 0.376);
+        }
+        html {
+            font-size: 16px;
+        }
+
+        h1 {
+            border: 0.2rem solid black;
+            padding:1rem;
+            text-align: center;
+            margin: auto;
+            margin-top: 10px;
+            /* margin-top: 300px; */
+            /* display: inline-block; */
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* .befor {
+            background-color: cornflowerblue;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        } */
+        /* .cad {
+            background-color: aqua;
+            position: relative;
+        } */
+        h1::before {
+            content: '';
+            background-color:blue;
+            width: 2.5rem;
+            height:2.5rem;
+            border-radius: 50%;
+            position: absolute;
+            left: -2.9rem;
+            transition: all 1s ease-in-out;
+            /* top:50%; */
+        }
+
+        h1::after {
+            content: '';
+            background-color:blue;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            position: absolute;
+            right:-2.9rem;
+            transition: all 1s ease-in-out;
+            /* top:50%; */
+        }
+
+        h1:hover::after {
+            width: 56%;
+            height:100%;
+            position: absolute;
+            right:0rem;
+            border-radius: 0px;
+            top: 0rem;
+            
+
+        }
+
+        h1:hover::before {
+            width: 56%;
+            height:100%;
+            position: absolute;
+            left:0rem;
+            border-radius: 0px;
+            top: 0rem;
+            
+        }
+
+        .container {
+            margin: 1.5rem;
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .container>div {
+            background-color: white;
+            /* padding: 100px 150px;x  */
+            width: 18.75rem;
+            height: 12.5rem;
+            text-align: center;
+            margin: auto;
+            box-shadow: 0px 0px 1rem 1.5rem rgba(232, 232, 232, 0.661);
+
+        }
+
+        div p {
+            margin: auto;
+            color: blue;
+            font-size:1.7rem;
+            font-weight: bold;
+            padding-top:5.5rem;
+        }
+
+        .container>div:hover {
+            border-top: 3px solid blue;
+        }
+        .card-chip {
+            display: flex;
+            justify-content:flex-end;
+            justify-content: space-between;
+            color: blue;
+        }
+        .pp-small {
+            padding: 5%;
+        }
+        .squ {
+            padding: 6%;
+        background-color: blue;
+        color: white;
+        }
+        .squ::after {
+            content: '';
+            width: 0.6rem;
+            left:-1.5rem;
+            padding: 0.4rem;
+            background-color: rgba(128, 128, 128, 0.274);
+        }
+        @media screen and (max-width:768px)
+        {
+            html {
+                font-size: 10px;
+            }
+        }
+        
+        </STyle>
+</head>
+
+<body>
+    <h1>HOW IT WORKS?</h1>
+    <div class="container">
+        <div class="service-card">
+            <img src="" alt="">
+            <p>Scurity</p>
+            <div class="card-chip">
+             <div class="squ">
+               01
+             </div>
+             <div class="pp-small">Scurity</div>
+            </div>
+        </div>
+        <div class="service-card1">
+            <img src="" alt="">
+            <p>Learing</p>
+            <div class="card-chip">
+                <div class="squ">
+                  02
+                </div>
+                <div class="pp-small">Learing</div>
+               </div>
+        </div>
+        <div class="service-card">
+            <img src="" alt="">
+            <p>Design</p>
+            <div class="card-chip">
+                <div class="squ">
+                  03
+                </div>
+                <div class="pp-small">Design</div>
+               </div>
+        </div>
+        <div class="service-card">
+            <img src="" alt="">
+            <p>Sells</p>
+            <div class="card-chip">
+                <div class="squ">
+                  04
+                </div>
+                <div class="pp-small">Sells</div>
+               </div>
+        </div>
+        <div class="service-card">
+            <img src="" alt="">
+            <p>Media</p>
+            <div class="card-chip">
+                <div class="squ">
+                  05
+                </div>
+                <div class="pp-small">Media</div>
+               </div>
+        </div>
+        <div class="service-card">
+            <img src="" alt="">
+            <p>Payment</p>
+            <div class="card-chip">
+                <div class="squ">
+                  06
+                </div>
+                <div class="pp-small">Payment</div>
+               </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

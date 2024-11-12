@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            /* padding: 1.5rem; */
+            height: 100vh;
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .logo {
+            padding: 0.5rem;
+            padding-left: 1rem;
+
+        }
+
+        .logo img {
+            width: 3rem;
+            height: 3rem;
+        }
+
+        button {
+            padding: 1rem;
+        }
+
+        .head1 {
+            text-align: center;
+            margin: auto;
+            padding: 20rem;
+            height: 100vh;
+            background-image: url(landing.jpg);
+        }
+
+        .head1 h1 {
+            padding: 1.5rem;
+            font-size: 4rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #10CAB7;
+        }
+
+        .head1 p {
+            font-size: 1.4rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-evenly;
+            /* justify-content: center; */
+            text-align: center;
+            background-color: #d1d3d43a;
+            height: 15rem;
+            /* margin: 2rem; */
+
+        }
+
+        section p,
+        .Services p {
+            color: #444444d3;
+            line-height: 1.4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section h3,
+        .Services h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+
+        }
+
+        section i {
+            font-size: 2rem;
+            padding-top: 1.8rem;
+        }
+
+        .Services-content {
+            display: flex;
+
+        }
+
+        .Services-content-part1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 1.5rem;
+            width: 70%;
+        }
+
+        .Services-content-part1 div div {
+            padding: 1rem;
+        }
+
+        h5 {
+            text-align: center;
+            /* padding: 1.5rem; */
+            color: #969494d3;
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 2rem;
+            z-index: 1000;
+
+        }
+
+        .card-container {
+            background-color: #d1d3d43a;
+            height: 35rem;
+            margin-top: 6rem;
+
+        }
+
+        .card {
+            display: flex;
+
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .card1,
+        .card2,
+        .card3 {
+            background-color: white;
+            width: 20rem;
+
+        }
+
+        .card-container h2,
+        .Services h2,.about h2,.contact h2 {
+            color: #e3e4e55e;
+            text-align: center;
+            font-size: 5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 2rem;
+        }
+
+        .part1,
+        .part2,
+        .part3,
+        .part4 {
+            position: relative;
+        }
+
+        .part1::before {
+            content: '';
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 1rem;
+        }
+
+        .card-content h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .card-content p {
+            color: #444444d3;
+            line-height: 1.4;
+        }
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .about-content-part2 {
+            width: 56%;
+        }
+        .about img {
+            width: 22rem;
+            height:30rem;
+            margin-left: 8rem;
+        }
+        .about p {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            line-height: 2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .pargraph {
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+        }
+        .about-content-part2:nth-child(2) {
+            color: #444444d3;
+        }
+        .contact {
+            background-color:#d1d3d43a ;
+        }
+        .contact-content-part1 img {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+        .contact-content-part1 {
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            line-height: 2;
+            padding-bottom: 10rem;
+        }
+        .pargraph-contact1{
+            color:#192931;
+            color: b;
+            font-weight:79rem;
+            font-size: 2rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .pargraph-contact {
+            color: #10CAB7;
+            font-size: 2rem;
+        }
+        .pargraph-contact2 {
+            color: #2f5061;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+
+        }
+        .contact-content-part2 {
+            text-align: center;
+            background-color: #192931;
+            padding:2rem;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif; 
+        font-size: 1.3rem;
+    }
+            .contact-content-part2 span {
+                color: #10CAB7;
+            }
+
+        .fa-wand-magic-sparkles:before {
+            content: "\e2ca";
+            color: #10CAB7;
+        }
+
+        shield-halved:before {
+            content: "\f3ed";
+            color: #10CAB7;
+
+        }
+
+        .fa-earth-americas:before {
+            content: "\f57d";
+            color: #10CAB7;
+        }
+
+        /* - primary (green): #10CAB7
+         - secondary (gray): #2C4755
+          - text color: #444 */
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="head">
+            <div class="logo"><img src="logo.png" alt=""></div>
+            <div><button>🖤</button> </div>
+        </div>
+        <div class="head1">
+            <h1>Hello There</h1>
+            <p>we are leon - super Creative & <br>Minimal Agency web Template</p>
+        </div>
+    </div>
+    <section>
+        <div>
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <h3>Tell Us Your Idea</h3>
+            <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Debitis numquam <br>nisi quae dolore
+                perferendis ex </p>
+        </div>
+        <div>
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>We will Do All The Work</h3>
+            <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Debitis numquam <br>nisi quae dolore
+                perferendis ex </p>
+        </div>
+        <div>
+            <i class="fa-solid fa-earth-americas"></i>
+            <h3>Your Product is Worldwide</h3>
+            <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Debitis numquam <br>nisi quae dolore
+                perferendis ex </p>
+        </div>
+    </section>
+    <div class="Services">
+        <h2>Services</h2>
+        <h5>Don't be busy,be productive</h5>
+        <div class="Services-content">
+            <div class="Services-content-part1">
+                <div>
+                    <div class="part1">
+                        <!-- <i class="fa-solid fa-earth-americas"></i> -->
+                        <h3>Graphic Desgin</h3>
+                        <p>Graphic design is the process of visual <br>communication and problem-solving <br>using one
+                            or more of typography <br>photography and illustration.</p>
+                    </div>
+                    <div class="part12">
+                        <!-- <i class="fa-solid fa-earth-americas"></i> -->
+                        <h3>Web Design</h3>
+                        <p>Graphic design is the process of visual <br>communication and problem-solving <br>using one
+                            or more of typography <br>photography and illustration.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="part3">
+                        <!-- <i class="fa-solid fa-earth-americas"></i> -->
+                        <h3>UI & UX</h3>
+                        <p>Graphic design is the process of visual <br>communication and problem-solving <br>using one
+                            or more of typography <br>photography and illustration.</p>
+                    </div>
+
+                    <div class="part4">
+                        <!-- <i class="fa-solid fa-earth-americas"></i> -->
+                        <h3>Web Development</h3>
+                        <p>Graphic design is the process of visual <br>communication and problem-solving <br>using one
+                            or more of typography <br>photography and illustration.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="Services-content-part2">
+
+            </div>
+        </div>
+    </div>
+    <div class="card-container">
+        <h2>Portfolio</h2>
+        <h5>If you do it right, it will last forever.</h5>
+        <div class="card">
+            <div class="card1">
+                <img src="portfolio-1.jpg" alt="">
+                <div class="card-content">
+                    <h4>Project Here</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Quam labore inventore <br>
+                        ducimus,
+                        aspernatur eum dicta!</p>
+                </div>
+
+            </div>
+            <div class="card2">
+                <img src="portfolio-2.jpg" alt="">
+                <div class="card-content">
+                    <h4>Project Here</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Quam labore inventore <br>
+                        ducimus,
+                        aspernatur eum dicta!</p>
+                </div>
+
+            </div>
+            <div class="card3">
+                <img src="portfolio-3.jpg" alt="">
+                <div class="card-content">
+                    <h4>Project Here</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Quam labore inventore <br>
+                        ducimus,
+                        aspernatur eum dicta!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="about">
+        <h2>About</h2>
+        <h5>Less is more work</h5>
+        <div class="about-content">
+            <div>
+               <img src="about.jpg" alt="">
+            </div>
+            <div class="about-content-part2">
+                <p class="pargraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officiis   sit aut accusamus  <br>natus 
+                    magnam cupiditate laborum minima eum est mollitia ut  consequuntur debitis eligendi  vitae <br>corporis blanditiis,
+                    recusandae numquam.</p>
+                <hr color="#10CAB7" width="50%">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta officiis   sit aut accusamus  <br>natus 
+                    magnam cupiditate laborum minima eum est mollitia ut  consequuntur debitis eligendi  vitae <br>corporis blanditiis,
+                    recusandae numquam.</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="contact">
+        <h2>Contact</h2>
+        <h5>We are born to create</h5>
+        <div class="contact-content">
+            <div class="contact-content-part1">
+                <p class="pargraph-contact1">Feel free to drop us a line at:</p>
+                <p class="pargraph-contact">leongency@mail.com</p>
+                <div class="pargraph-contact2">
+                    <p>Find Us Social Networks </p>
+                    <img src="./../face.png" alt="">
+                    <img src="./../google.png" alt="">
+                    <img src="./../tel.jfif" alt="">
+                </div>
+                
+            </div>  
+            <div class="contact-content-part2">
+               <p>2021 <span>Lean </span> All Right Reserved</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

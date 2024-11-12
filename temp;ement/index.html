@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobe</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            /* used to calculate rem values */
+            font-size: 16px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(51, 51, 51);
+        }
+
+        a {
+            color: unset;
+            text-decoration: none;
+        }
+
+
+        /* Start of Header Syles */
+        header {
+            padding: 30px;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 42px;
+            font-weight: bold;
+            margin-right: 200px;
+        }
+
+        nav {
+            display: inline-block;
+            font-size: 24px;
+
+            text-align: center;
+            margin-right: 150px
+        }
+
+        .nav-link {
+            opacity: 0.75;
+            margin: 0 20px;
+            font-weight: 500;
+            transition: all 0.2s
+        }
+
+        .nav-link:hover {
+            opacity: 1;
+            font-size: 25px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #04DDB2;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 15px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            transition: all 0.5s
+        }
+
+        .download-btn:hover {
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        /* End of Header Syles */
+
+        /* Start of Hero Styles */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .hero h1 {
+            font-size: 3.75rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #04DDB2
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            width: 50%;
+            line-height: 1.5
+        }
+
+        /* End of Hero Styles */
+
+        /* Start of Footer Styles */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 6rem 12rem;
+        }
+
+        footer .title {
+            display: inline-block;
+            font-size: 42px;
+            font-weight: bold;
+            margin-right: 200px;
+        }
+
+        footer .content {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            line-height: 2;
+        }
+
+        footer .icon {
+            width: 3rem;
+            height: 3rem;
+            background-color: #04DDB2;
+            border-radius: 50%;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer ul li {
+            font-size: 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        footer ul li.icon {
+            margin-top: 0;
+        }
+
+        footer ul li.footer-list-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 1.75rem
+        }
+
+        @media screen and (max-width:600px) {
+            nav {
+                display: none;
+            }
+            html {
+                font-size:12px ;
+            }
+
+            footer{ 
+                display: flex;
+                flex-direction: column;
+            }
+            ul {
+                display:block;
+            }
+        }
+
+        /* End of Footer Styles */
+    </style>
+
+    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="#">
+                <div class="logo-title">lobe</div>
+            </a>
+
+            <!-- img should be here -->
+        </div>
+
+        <nav>
+            <a href="#" class="nav-link">Overview</a>
+            <a href="#" class="nav-link">Examples</a>
+            <a href="#" class="nav-link">Tour</a>
+            <a href="#" class="nav-link">Blog</a>
+            <a href="#" class="nav-link">Help</a>
+        </nav>
+
+        <button class="download-btn">Download</button>
+
+    </header>
+
+    <main>
+        <section class="hero">
+
+            <h1>Lobe <span>Tour</span></h1>
+
+            <p>Build your first machine learning model in ten minutes. No code or experience required.</p>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="foo">
+            <div class="title">lobe</div>
+
+            <p class="content">A product by Microsoft.
+                <br>
+                All rights reserved.
+                <br>
+                Microsoft 2021
+            </p>
+
+        </div>
+
+        <ul>
+            <li class="footer-list-title">About</li>
+            <li>Download</li>
+            <li>Overview</li>
+            <li>Examples</li>
+            <li>Blog</li>
+        </ul>
+
+        <ul>
+            <li class="footer-list-title">General</li>
+            <li>Notice</li>
+            <li>License</li>
+            <li>Press Inquiry</li>
+            <li>Press Images</li>
+        </ul>
+
+        <ul>
+            <li class="footer-list-title">Resources</li>
+            <li>Help</li>
+            <li>Tour</li>
+            <li>Contact</li>
+            <li>Privacy</li>
+        </ul>
+
+        <ul>
+            <li class="icon"></li>
+            <li class="icon"></li>
+            <li class="icon"></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

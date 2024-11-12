@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .container div {
+            padding: 20px;
+            text-align: center;
+        }
+        .box1 {
+            background-color: antiquewhite;
+        }
+        .box2 {
+            background-color: blue;
+        }
+        .box3 {
+            background-color:palevioletred;
+        
+        }
+        .box4 {
+            background-color: red;
+        }
+        .box5 {
+            background-color: blueviolet;
+        }
+        .box6 {
+            background-color:darkolivegreen;
+            grid-column: 4/5;
+        }
+        .box7 {
+            background-color: yellow;
+        }
+        .box8 {
+            background-color: green;
+            grid-column: 2/5;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Bos-1</div>
+        <div class="box2">box-2</div>
+        <div class="box3">box-3</div>
+        <div class="box4">box-4</div>
+        <div class="box5">box-5</div>
+        <div class="box6">box-6</div>
+        <div class="box7">box-7</div>
+        <div class="box8">box-8</div>
+    </div>
+</body>
+</html>

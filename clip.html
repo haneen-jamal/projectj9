@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 900px;
+            position: relative;
+            background-color: rgba(168, 168, 189, 0.588);
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(105, 105, 129, 0.469);
+        }
+
+        .perent {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .perent div {
+            width: 200px;
+            height: 200px;
+            margin: 30px;
+            text-align: center;
+            padding: 50px;
+            color: white;
+            font-size: xx-large;
+        }
+
+        .polygon {
+            background-color: aqua;
+            clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+
+        }
+
+        .cir {
+            background-color: blue;
+            clip-path: circle();
+        }
+
+        .ellipse {
+            background-color: brown;
+            clip-path: ellipse(130px 140px at 10% 20%);
+        }
+
+        .path {
+            background-color: blueviolet;
+            clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z');
+        }
+
+        .rect {
+            background-color: gold;
+            clip-path: inset(5px 5px 23px 9px round 20%);
+            /* clip-path:rect(5px 5px 160px 145px round 20%); */
+        }
+
+        .xywh {
+            background-color: burlywood;
+            clip-path: xywh(0 5px 100% 75% round 15% 0);
+        }
+
+        .sec {
+            position: absolute;
+            top: 700px;
+            left: 400px;
+            
+        }
+
+        .Maker {
+            display: flex;
+            justify-content: center;
+        }
+
+        .Maker div {
+            width: 200px;
+            height: 200px;
+            margin: 30px;
+        }
+
+        .t1 {
+            background-color: chartreuse;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+            /* clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%); */
+        }
+
+        .t2 {
+            background-color: chocolate;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Shape Function</h1>
+    <div class="perent">
+        <div>
+            <div class="polygon">polygon</div>
+            <div class="cir">circle</div>
+        </div>
+        <div>
+            <div class="ellipse">ellipse</div>
+            <div class="path">path</div>
+        </div>
+        <div>
+            <div class="rect">rect</div>
+            <div class="xywh">xywh</div>
+        </div>
+    </div>
+    <div class="sec">
+        <h1>Path Maker</h1>
+        <div class="Maker">
+            <div class="t1"></div>
+            <div class="t2"> </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

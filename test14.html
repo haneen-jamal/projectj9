@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 40px;
+
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            margin: 20px
+        }
+
+        .container  > div {
+            padding: 0px 50px;
+            text-align: center;
+        }
+
+        .grow-container {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            height: 125px;
+            background-color: aliceblue;
+            border: 2px solid aliceblue;
+            border-radius: 5px;
+            width: 85%;
+            margin: 0px 75px;
+
+        }
+
+        div .box {
+            align-items:center;
+            height: 50px;
+            background-color: antiquewhite;
+            text-align: center;
+            border-radius: 15px;
+            margin: 5px;
+            padding:1px;
+
+        }
+
+        .grow-container div:nth-child(1) {
+            width: 510px;
+            background-color: #66d1ff;
+            align-self: center;
+        }
+
+        .grow-container div:nth-child(2) {
+            width: 510px;
+            background-color: #ffb70f;
+        }
+
+        .grow-container div:nth-child(3) {
+            width: 340px;
+            background-color: #ff6685;
+        }
+
+        .grow-container div:nth-child(4) {
+            width: 340px;
+            background-color: #4258ff;
+
+        }
+
+        .grow-container div:nth-child(5) {
+            width: 340px;
+            background-color: #ffb70f;
+        }
+
+        .shrink-container {
+            display: flex;
+            justify-content: space-around;
+            height: 60px;
+
+            background-color: aliceblue;
+            border: 2px solid aliceblue;
+            border-radius: 5px;
+            width: 85%;
+            margin: 0px 75px;
+        }
+
+        .shrink-container div:nth-child(1) {
+            background-color: #4258ff;
+            width: 170px;
+            flex-grow: 1;
+        }
+
+        .shrink-container div:nth-child(2) {
+            background-color: #00D1B2;
+            width: 170px;
+        }
+
+        .shrink-container div:nth-child(3) {
+            background-color: #66d1ff;
+            width: 170px;
+        }
+
+        .shrink-container div:nth-child(4) {
+            background-color: #ffb70f;
+            width: 170px;
+
+        }
+
+        .order-container {
+            display: flex;
+            justify-content: space-around;
+            height: 60px;
+
+            background-color: aliceblue;
+            border: 2px solid aliceblue;
+            border-radius: 5px;
+            width: 85%;
+            margin: 0px 75px;
+        }
+        .order-container div:nth-child(1){
+            background-color:#4258ff;
+            width: 205px;
+            order: 5.. ;
+        }
+        .order-container div:nth-child(2){
+            background-color:#00D1B2;
+            width: 205px;
+            order: 3;
+        } .order-container div:nth-child(3){
+            background-color:#66d1ff;
+            width: 205px;
+            order: 4;
+        } .order-container div:nth-child(4){
+            background-color:#ffb70f;
+            width: 205px;
+            order: 2;
+        } .order-container div:nth-child(5){
+            background-color:#ff6685;
+            width: 205px;
+            order: 1;
+
+        }
+            
+    
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Flex Grow and Shrink and Order</h1>
+
+        <h2>Example - 4 -</h2>
+
+        <div class="grow-container">
+            <div class="box">Box - 1</div>
+            <div class="box">Box - 2</div>
+            <div class="box">Box - 3</div>
+            <div class="box">Box - 4</div>
+            <div class="box">Box - 5</div>
+        </div>
+
+        <h2>Example - 2 -</h2>
+
+        <div class="shrink-container">
+            <div class="box">Box - 1</div>
+            <div class="box">Box - 2</div>
+            <div class="box">Box - 3</div>
+            <div class="box">Box - 4</div>
+        </div>
+
+        <h2>Example - 3 -</h2>
+
+        <div class="order-container">
+            <div class="box">Box - 1</div>
+            <div class="box">Box - 2</div>
+            <div class="box">Box - 3</div>
+            <div class="box">Box - 4</div>
+            <div class="box">Box - 5</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

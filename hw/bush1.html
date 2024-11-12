@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #f1c40f;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 20px;
+}
+div {
+    border: 2px solid black;
+}
+.box {
+
+    background-color: #ffe064;
+    padding: 50px;
+    border: 3px dashed #333;
+    text-align: center;
+    color: #fefcfc;
+    text-shadow: 2px 2px 3px #000;
+    box-sizing: border-box; 
+}
+
+.box1 {
+    width: 150px;
+    margin: 10px 0px 0px 10px;
+}
+
+.box2 {
+    width: 150px;
+    margin:0px 0px 0px 160px;
+}
+
+.box3 {
+    width: 200px;
+    margin:0px 0px 0px 310px;
+
+}
+
+.box4 {
+    width: 250px;
+    margin:0px 0px 10px 510px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>A Simple Challenge using selectors & margin</h1>
+    <div>
+        <p class="box box1">width 150px<br>padding 50px</p>
+        <p class="box box2">width 150px<br>padding 50px</p>
+        <p class="box box3">width 200px<br>padding 50px</p>
+        <p class="box box4">width 250px<br>padding 50px</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Job Listings</title>
+
+  <style>
+    /* Reset */
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: unset;
+    }
+
+    /* Header */
+    header {
+      height: 8rem;
+      background-color: #5EA4A4;
+      background-image: url(./bg-header.svg);
+    }
+
+    /* Container */
+    .container {
+      padding: 4rem 2rem;
+      background-color: #F0FAFB;
+    }
+
+    /* Card */
+    .card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      background-color: white;
+      box-shadow: 0 5px 5px 0 #DEEFF1;
+      border-radius: 5px;
+
+      padding: 1.5rem 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .border-left {
+      border-left: 4px solid #5EA4A4;
+    }
+
+    /* Card Content Styling */
+
+    /* Card Image */
+    .card img {
+      background-color: #F1F7F6;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .card-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .card-title {
+      font-weight: 700;
+      margin: 0.5rem 0;
+    }
+
+    .subtitle {
+      color: #5DA5A4;
+      font-weight: 600;
+      font-size: 0.75rem;
+    }
+
+    /* Card Chips Styling */
+    .card-content-chips {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .card-chips {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .chip {
+      padding: 0.25rem 0.5rem;
+      font-weight: 600;
+      font-size: 0.75rem;
+    }
+
+    .rounded-chip {
+      border-radius: 20px;
+    }
+
+    .primary-chip {
+      background-color: #5DA5A4;
+      color: white;
+    }
+
+    .dark-chip {
+      background-color: #2D3A39;
+      color: white;
+    }
+
+    .light-chip {
+      background-color: #F0F6F6;
+      color: #5DA5A4;
+      border-radius: 5px;
+    }
+
+
+
+    ul {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: #888;
+    }
+
+    ul li:first-child {
+      list-style-type: none;
+    }
+      @media screen  and (max-width: 768px){
+        .card {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          position: relative;
+          gap:2rem;
+          
+          
+        }
+        .container {
+          width: 95%;
+        }
+        .card-chips {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .card-content {
+          flex-direction: column;
+          gap: 1.5rem;
+          margin-top: 2rem;
+        }
+        .card img {
+          width: 15%;
+          position: absolute;
+          left:4px ;
+          top:-10px
+        }
+
+        html {
+          font-size: 10px;
+        }
+
+      }
+  </style>
+</head>
+
+<body>
+
+  <header></header>
+
+  <main>
+    <div class="container">
+
+      <div class="card border-left">
+
+        <div class="card-content">
+
+
+          <img src="./photosnap.svg" alt="photosnap">
+
+          <div>
+            <div class="card-content-chips">
+              <span class="subtitle">Photosnap</span>
+              <div class="chip rounded-chip primary-chip">New!</div>
+              <div class="chip rounded-chip dark-chip">Featured</div>
+            </div>
+
+            <div class="card-title">Senior Frontend Developer</div>
+
+            <ul>
+              <li>1d ago</li>
+              <li>Full Time</li>
+              <li>USA only</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-chips">
+          <div class="chip light-chip">Frontend</div>
+          <div class="chip light-chip">Senior</div>
+          <div class="chip light-chip">HTML</div>
+          <div class="chip light-chip">CSS</div>
+          <div class="chip light-chip">JavaScript</div>
+        </div>
+      </div>
+
+      <div class="card border-left">
+
+        <div class="card-content">
+
+
+          <img src="./photosnap.svg" alt="photosnap">
+
+          <div>
+            <div class="card-content-chips">
+              <span class="subtitle">Photosnap</span>
+              <div class="chip rounded-chip primary-chip">New!</div>
+              <div class="chip rounded-chip dark-chip">Featured</div>
+            </div>
+
+            <div class="card-title">Senior Frontend Developer</div>
+
+            <ul>
+              <li>1d ago</li>
+              <li>Full Time</li>
+              <li>USA only</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-chips">
+          <div class="chip light-chip">Frontend</div>
+          <div class="chip light-chip">Senior</div>
+          <div class="chip light-chip">HTML</div>
+          <div class="chip light-chip">CSS</div>
+          <div class="chip light-chip">JavaScript</div>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <div class="card-content">
+
+
+          <img src="./photosnap.svg" alt="photosnap">
+
+          <div>
+            <div class="card-content-chips">
+              <span class="subtitle">Photosnap</span>
+              <div class="chip rounded-chip primary-chip">New!</div>
+              <div class="chip rounded-chip dark-chip">Featured</div>
+            </div>
+
+            <div class="card-title">Senior Frontend Developer</div>
+
+            <ul>
+              <li>1d ago</li>
+              <li>Full Time</li>
+              <li>USA only</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-chips">
+          <div class="chip light-chip">Frontend</div>
+          <div class="chip light-chip">Senior</div>
+          <div class="chip light-chip">HTML</div>
+          <div class="chip light-chip">CSS</div>
+          <div class="chip light-chip">JavaScript</div>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <div class="card-content">
+
+
+          <img src="./photosnap.svg" alt="photosnap">
+
+          <div>
+            <div class="card-content-chips">
+              <span class="subtitle">Photosnap</span>
+              <div class="chip rounded-chip primary-chip">New!</div>
+              <div class="chip rounded-chip dark-chip">Featured</div>
+            </div>
+
+            <div class="card-title">Senior Frontend Developer</div>
+
+            <ul>
+              <li>1d ago</li>
+              <li>Full Time</li>
+              <li>USA only</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-chips">
+          <div class="chip light-chip">Frontend</div>
+          <div class="chip light-chip">Senior</div>
+          <div class="chip light-chip">HTML</div>
+          <div class="chip light-chip">CSS</div>
+          <div class="chip light-chip">JavaScript</div>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <div class="card-content">
+
+
+          <img src="./photosnap.svg" alt="photosnap">
+
+          <div>
+            <div class="card-content-chips">
+              <span class="subtitle">Photosnap</span>
+              <div class="chip rounded-chip primary-chip">New!</div>
+              <div class="chip rounded-chip dark-chip">Featured</div>
+            </div>
+
+            <div class="card-title">Senior Frontend Developer</div>
+
+            <ul>
+              <li>1d ago</li>
+              <li>Full Time</li>
+              <li>USA only</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-chips">
+          <div class="chip light-chip">Frontend</div>
+          <div class="chip light-chip">Senior</div>
+          <div class="chip light-chip">HTML</div>
+          <div class="chip light-chip">CSS</div>
+          <div class="chip light-chip">JavaScript</div>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0
+}
+
+.container {
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+.card {
+    padding: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    background-color: orange;
+    border: 2px dashed black;   
+}
+
+.item-1 {
+    width: 150px;
+    margin-left: 0;
+}
+
+.item-2 {
+    width: 150px;
+    margin-left: 150px;
+}
+
+.item-3 {
+    width: 200px;
+    margin-left: 300px
+}
+.item-4 {
+    width: 250px;
+    margin-left: 500px
+}

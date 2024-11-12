@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-transform: uppercase;
+            color: blue;
+            background-color:lightgoldenrodyellow;
+            border-bottom: 2px solid blue;
+            text-align: center;
+        }
+        h2 {
+            color: darkred;
+            background-color:bisque ;
+            border-left: 8px solid darkred;
+            font-size:xx-large;
+            font-weight: bold;
+            font-style: italic;
+        }
+        p {
+           color:darkcyan;
+           background-color:rgb(238, 242, 242);
+           font-size:large;
+           font-family:monospace;
+           font-style:normal;
+        }
+        ul li{
+            color: blue;
+            background-color: rgb(200, 198, 198);
+            text-transform: uppercase;
+            font-size: x-large;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            
+            
+        }
+        ul li:first-child {
+            border-bottom: 5px solid blue;
+        }
+        ul ul li {
+            color:darkmagenta;
+            background-color:lightgoldenrodyellow;
+            border-bottom: 5px solid blue;
+            border-left: 3px solid blueviolet;
+        }
+        h3{
+            color:gold;
+            background-color:lightgoldenrodyellow;
+            font-size: xx-large;
+            font-weight: bold;
+            border-left: 8px solid gold ;
+
+        }
+        div p:first-child {
+            color:rgb(92, 88, 88);
+            background-color:rgb(192, 254, 254);
+            text-decoration-line:underline;
+            text-decoration-color:  red;
+            text-decoration-style: solid;
+            text-decoration-thickness: 3px;
+            text-align: right;
+            border-top: 2px solid green;
+            
+           
+        }
+        h4 {
+            color: darkred;
+            background-color: bisque ;
+            text-align: center;
+            border-bottom: 2px dashed darkred;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        
+          div p{
+            color:rgb(75, 72, 72) ;
+            background-color:darkgray ;
+        font-family:monospace;
+        font-size: larger;
+
+        }
+
+
+        
+     
+    </style>
+</head>
+<body>
+    <h1 >main title inside div </h1>
+    <h2>Subtitle Directly Inside Div  </h2>
+    <p>This paragraph is a direct child of section element . It is styled using the child combinator  </p>
+    <ul>
+        <li>first level item 1</li>
+        <li>first level item 2 
+            <ul>
+                <li>second level item 1</li>
+                <li>second level item 2</li>
+            </ul>
+        </li>
+    </ul>
+    <h3>article header </h3>
+    <div>
+        <p>Direct paragraph inside article with unique styling</p>
+        <h4>Footer Heading  </h4>
+        <p><em>Text iniside a footer , styled with descendant and child selectors</em> </p>
+
+    </div>
+    
+    
+</body>
+</html>
